@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './MatchDisplay.css';
 
 import prettyMs from 'pretty-ms';
-import { spellIcon, runeIcon, champion, championIcon, item, itemIcon } from './util';
+import { spellIcon, champion, championIcon, item, itemIcon } from './util';
 
 function MatchDisplay(props) {
     // Extract relevant information from the complicated data object
@@ -44,7 +44,7 @@ function MatchDisplay(props) {
                 {sumSpells.map(s => <img className="spell-icon" key={match.gameId+s} alt={s} src={spellIcon(s)} />)}
             </div>
             <div className="champion-row">Runes<br />
-                {sumRunes.map(r => <img className="rune-icon" key={match.gameId+r} alt={r} src={runeIcon(r)} />)}
+                {sumRunes.map(r => <span className="rune-id" key={match.gameId+r.runeId}>Rune {r.runeId} rank {r.rank}</span>)}
             </div>
         </div>
         <div className="item-group">

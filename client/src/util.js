@@ -14,10 +14,6 @@ export function spellIcon(id) {
     return `${baseUrl}/img/spell/${spell.image.full}`;
 }
 
-export function runeIcon(id) {
-    return `${baseUrl}/img/rune/${id}.png`;
-}
-
 export function item(id) {
     return items.data[id];
 }

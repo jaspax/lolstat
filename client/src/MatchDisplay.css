@@ -81,8 +81,9 @@
     height: 24px;
 }
 
-.rune-icon {
-    height: 24px;
+.rune-id {
+    font-size: x-small;
+    margin: 2px;
 }
 
 .title {
