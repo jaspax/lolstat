@@ -72,3 +72,9 @@ body {
       box-shadow: 0 0 0 0 rgba(34,193,195,0);
   }
 }
+
+.error {
+    background-color: white;
+    color: FireBrick;
+    border-radius: 10px;
+}

@@ -40,7 +40,7 @@ class App extends Component {
 
     renderError(err) {
         console.error(err);
-        return <span className="error">An error occurred</span>;
+        return <span className="error">An error occurred.<br />(You might need to turn off your ad blocker.)</span>;
     }
 
     async loadStats(name) {
