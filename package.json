@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "express-yields": "^1.1.2"
+    "express-yields": "^1.1.2",
+    "leaguejs": "^1.10.1"
   },
   "devDependencies": {
     "concurrently": "^4.0.1"
