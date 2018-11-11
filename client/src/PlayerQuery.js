@@ -10,7 +10,7 @@ class PlayerQuery extends Component {
 
     render() {
         return <div className="player-query-container">
-            <input type="text" name="name" placeholder="Enter a player name here" value={this.state.value} onChange={this.onInputChange.bind(this)}></input>
+            <input type="text" name="name" placeholder="Enter summoner name" value={this.state.value} onChange={this.onInputChange.bind(this)}></input>
             <button type="submit" onClick={this.onClick.bind(this)}>Go</button>
         </div>;
     }
