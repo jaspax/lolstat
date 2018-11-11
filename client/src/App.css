@@ -49,5 +49,26 @@ body {
 }
 
 .loading {
+    text-align: center;
     font-size: x-large;
+    font-weight: bold;
+    color: white;
+    width: 50%;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 0 rgba(34,193,195,0.4);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(34,193,195,0.4);
+  }
+  70% {
+      box-shadow: 0 0 0 10px rgba(34,193,195,0);
+  }
+  100% {
+      box-shadow: 0 0 0 0 rgba(34,193,195,0);
+  }
 }
