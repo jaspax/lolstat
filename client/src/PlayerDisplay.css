@@ -1,0 +1,23 @@
+.player-display-container {
+    width: 100%;
+    text-align: left;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(58,45,253,1) 100%);
+}
+
+.profile-icon-container {
+    float: left;
+    margin-right: 8px;
+    width: 10%;
+}
+
+.profile-icon {
+    width: 100%;
+}
+
+.level-tag {
+    font-size: small;
+}
+
+.level {
+    font-size: x-large;
+}

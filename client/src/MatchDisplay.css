@@ -1,0 +1,125 @@
+.match-container {
+    width: 90%;
+    clear: both;
+    margin-top: 8px;
+}
+
+.match-container > * {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: 1px;
+    padding: 2px;
+    padding-top: 6px;
+    height: 144px;
+    position: relative;
+    background-color: white;
+    background: linear-gradient(0deg, rgba(170,170,170,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.title {
+    margin: 0px;
+    padding: 0px 4px;
+    border-radius: 2px;
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    text-shadow: 1px 1px 2px white;
+    font-weight: bold;
+    font-size: small;
+}
+
+.match-outcome {
+    width: 15%;
+    font-weight: bold;
+}
+
+.match-win {
+    color: ForestGreen;
+}
+
+.match-loss {
+    color: FireBrick;
+}
+
+.start-time {
+    font-size: small;
+    margin: 8px 4px;
+}
+
+.champion-group {
+    width: 25%;
+    text-align: left;
+}
+
+.champion-row {
+    margin: 2px;
+    clear: both;
+    font-size: x-small;
+}
+
+.champion-group img {
+    margin: 2px;
+    vertical-align: middle;
+}
+
+.champion-icon {
+    display: block;
+    float: left;
+    height: 36px;
+}
+
+.champ-name {
+    font-size: medium;
+}
+.champ-level {
+    font-size: small;
+}
+
+.spell-icon {
+    height: 24px;
+}
+
+.rune-icon {
+    height: 24px;
+}
+
+.title {
+    font-size: small;
+    background: white;
+}
+
+.item-group {
+    width: 25%;
+    text-align: left;
+    font-size: small;
+    white-space: nowrap;
+}
+
+.item-row {
+    overflow: hidden;
+    width: 100%;
+}
+
+.item-group img {
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.item-name {
+    width: 85%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.score-group {
+    width: 15%;
+    text-align: left;
+    font-size: small;
+}
+
+.score-group p {
+    margin: 2px;
+}

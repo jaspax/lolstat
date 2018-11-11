@@ -1,5 +1,18 @@
+body {
+    background-color: black;
+}
+
 .App {
   text-align: center;
+  width: 75%;
+  max-width: 1024px;
+  margin: auto;
+  padding-top: 300px;
+  padding-bottom: 200px;
+  background-image: url(banner.jpg);
+  background-position-y: -184px;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 
 .App-logo {
@@ -29,4 +42,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.result-container {
+    width: 100%;
+}
+
+.loading {
+    font-size: x-large;
 }
