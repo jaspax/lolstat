@@ -22,7 +22,8 @@ function MatchDisplay(props) {
 
     const kda = ((stats.kills + stats.assists) / stats.deaths);
     const items = [...Array(6).keys()].map(i => item(stats['item'+i])).filter(i => i);
-    const totalCreeps = Object.values(participant.timeline.creepsPerMinDeltas).reduce((acc, cur) => acc + cur, 0);
+    const creepDeltas = Object.values(participant.timeline.creepsPerMinDeltas);
+    const totalCreeps = creepDeltas.reduce((acc, cum) => acc + cum * 10, 0);
     const creepsPerMin = (totalCreeps / (match.gameDuration / 60));
 
     return <section className="match-container">
@@ -53,7 +54,7 @@ function MatchDisplay(props) {
         <div className="score-group">
             <div className="title">Score</div>
             <p>KDA: {kda.toFixed(2)}</p>
-            <p>Creep score: {totalCreeps.toFixed(2)}</p>
+            <p>Creep score: {totalCreeps.toFixed(0)}</p>
             <p>Creeps/min: {creepsPerMin.toFixed(2)}</p>
         </div>
     </section>;
