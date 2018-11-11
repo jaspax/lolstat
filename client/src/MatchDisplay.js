@@ -22,7 +22,7 @@ function MatchDisplay(props) {
 
     const kda = ((stats.kills + stats.assists) / stats.deaths);
     const items = [...Array(6).keys()].map(i => item(stats['item'+i])).filter(i => i);
-    const creepDeltas = Object.values(participant.timeline.creepsPerMinDeltas);
+    const creepDeltas = Object.values(participant.timeline.creepsPerMinDeltas || {});
     const totalCreeps = creepDeltas.reduce((acc, cum) => acc + cum * 10, 0);
     const creepsPerMin = (totalCreeps / (match.gameDuration / 60));
 
