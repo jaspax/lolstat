@@ -53,12 +53,13 @@ body {
     font-size: x-large;
     font-weight: bold;
     color: white;
-    width: 50%;
-    margin: auto;
+    margin: 20px auto;
+    padding: 10px;
+    width: 40%;
     display: block;
     border-radius: 50%;
     box-shadow: 0 0 0 rgba(34,193,195,0.4);
-    animation: pulse 2s infinite;
+    animation: pulse 1.7s infinite;
 }
 
 @keyframes pulse {
