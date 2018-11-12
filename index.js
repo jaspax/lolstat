@@ -21,7 +21,10 @@ app.get('/api/stat', async (req, res) => {
     try {
         const summoner = await lol.Summoner.gettingByName(player);
         const matchRefs = await lol.Match.gettingRecentListByAccount(summoner.accountId);
-        const matches = await Promise.all(matchRefs.matches.map(ref => lol.Match.gettingById(ref.gameId)));
+
+        // only take the first 10 matches to help speed things up
+        const top10 = matchRefs.slice(0, 10);
+        const matches = await Promise.all(top10.matches.map(ref => lol.Match.gettingById(ref.gameId)));
         return res.json({ summoner, matches }).send();
     }
     catch (ex) {
